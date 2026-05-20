@@ -13,5 +13,9 @@
     "postcss-pxtorem": "^6.1.0",
     "sass": "^1.84.0",
     "vite": "^6.4.2"
+  },
+  "dependencies": {
+    "purecss": "^3.0.0",
+    "swiper": "^12.1.4"
   }
 }

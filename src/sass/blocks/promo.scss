@@ -62,8 +62,9 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 450px;
+            width: clamp(450px, 37.5vw, 640px);
             height: 633px;
+            object-fit: cover;
         }
 
         &__title {
@@ -94,6 +95,15 @@
 
         &__btn {
             margin: 50px auto 0 auto;
+        }
+
+        &__title {
+            padding-left: 642px;
+            padding-top: 384px;
+        }
+
+        &__potter {
+            height: 900px;
         }
     }
 }
