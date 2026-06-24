@@ -12,15 +12,29 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
 		rel="stylesheet" />
-  <script type="module" crossorigin src="/Ceramic_soul/assets/main-DjvXhMrM.js"></script>
-  <link rel="stylesheet" crossorigin href="/Ceramic_soul/assets/main-6nnnpyNG.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script type="module" crossorigin src="/Ceramic_soul/assets/script-CliI-wmR.js"></script>
+  <link rel="stylesheet" crossorigin href="/Ceramic_soul/assets/script-sKDUHj5A.css">
 </head>
 
 <body>
 	<section class="promo">
 		<img src="/Ceramic_soul/assets/potter-Dgq44G72.jpg" alt="potter" class="promo__potter">
-		<div class="container">
-			<div class="header">
+		<div class="header">
+			<div class="header__menu header">
+				<div class="header__menu-close">
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="header__menu-nav">
+					<ul>
+						<li><a href="#" class="header__menu-link">catalog</a></li>
+						<li><a href="#" class="header__menu-link">blog</a></li>
+						<li><a href="#" class="header__menu-link">about</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container">
 				<div class="header__top">
 					<div class="burger">
 						<span></span><span></span><span></span>
@@ -33,12 +47,14 @@
 				</div>
 				<nav class="header__nav">
 					<ul>
-						<li><a href="#" class="header__link">catalog</a></li>
-						<li><a href="#" class="header__link">blog</a></li>
-						<li><a href="#" class="header__link">about </a></li>
+						<li><a href="/Ceramic_soul/catalog" class="header__link">catalog</a></li>
+						<li><a href="/Ceramic_soul/blog" class="header__link">blog</a></li>
+						<li><a href="/Ceramic_soul/about" class="header__link">about</a></li>
 					</ul>
 				</nav>
 			</div>
+		</div>
+		<div class="container">
 			<div class="promo__wrapper">
 				<h1 class="title-h1-italic promo__title">Make your dream come true<br>or decorate your home</h1>
 				<div class="promo__cta">
@@ -49,7 +65,149 @@
 		</div>
 	</section>
 
+	<section class="activites">
+		<div class="container">
+			<h2 class="title-h2">create or buy</h2>
+			<div class="pure-g activites__wrapper">
+				<div class="pure-u-1 pure-u-xl-2-5 activites_col">
+					<h3 class="title-h3">our store</h3>
+					<img src="/Ceramic_soul/assets/store-CVtOxCsN.jpg" alt="store" class="activites__img">
+					<p class="activites__text">Welcome to <span class="activites__text_colored">Ceramic Soul</span>,
+						where each piece tells a story of
+						craftsmanship and
+						creativity. Our handmade ceramics are
+						thoughtfully designed and carefully crafted, blending traditional techniques with modern
+						aesthetics.
+						Whether you're
+						looking for a unique gift or a special addition to your home, our collection offers timeless
+						pieces
+						that bring warmth
+						and authenticity to any space.</p>
+				</div>
+				<div class="pure-u-1 pure-u-xl-3-5">
+					<h3 class="title-h3">our workshop</h3>
+					<img src="/Ceramic_soul/assets/ceramic-Bgx1feVJ.jpg" alt="ceramic" class="activites__img">
+					<p class="activites__text activites__text_fixed">At <span class="activites__text_colored">Ceramic
+							Soul</span> workshop,
+						we
+						don’t just craft ceramics—we
+						invite
+						you to get
+						hands-on and create your own unique pieces.
+						Through our engaging masterclasses, you’ll learn traditional techniques, work with natural
+						materials, and experience the
+						joy of shaping clay into something truly personal.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section class="touch">
+		<div class="container">
+			<h2 class="touch__title title-h2">get in touch</h2>
+			<div class="pure-g touch__wrapper">
+				<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
+					<img class="touch__img" src="/Ceramic_soul/assets/tea-DeOr11j9.jpg" alt="tea">
+				</div>
+				<div class="pure-u-1 pure-u-xl-1-3 pure-u-xxl-3-5">
+					<form class="touch__form" action="#">
+						<fieldset class="touch__fieldset">
+							<div class="touch__input-block">
+								<label class="touch__label" for="name">Name</label>
+								<input class="touch__input" type="text" id="name" name="name" placeholder="Name">
+							</div>
+							<div class="touch__input-block">
+								<label class="touch__label" for="email">Email</label>
+								<input class="touch__input" type="email" id="email" name="email" placeholder="Email">
+							</div>
+						</fieldset>
+						<label class="touch__label" for="">Your question</label>
+						<textarea class="touch__textarea" name="question" id="question"
+							placeholder="Question"></textarea>
+						<div class="error__message"></div>
+
+						<label class="touch__label touch__check-block" for="checkbox">
+							<input class="touch__checkbox" type="checkbox" id="checkbox">
+							I agree with the <a href="#">terms</a></label>
+						<div class="checkbox-error__message"></div>
+
+						<button class="btn-send touch__btn">send request</button>
+					</form>
+				</div>
+			</div>
+			<img class="touch__vase" src="/Ceramic_soul/assets/vase-vlRwx0nf.png" alt="vase">
+		</div>
+	</section>
+	<section class="works">
+		<h2 class="title-h2">check out our works</h2>
+		<div class="container">
+			<div class="works__wrapper">
+				<button class="icon-left-open works__slider-nav"></button>
+				<div class="swiper works__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="/Ceramic_soul/assets/tea-1-vKMOH0_y.jpg" alt="tea-1"></div>
+						<div class="swiper-slide"><img src="/Ceramic_soul/assets/tea-2-CiZGhhkc.jpg" alt="tea-2"></div>
+						<div class="swiper-slide"><img src="/Ceramic_soul/assets/tea-3-ILJqlmY_.jpg" alt="tea-3"></div>
+						<div class="swiper-slide"><img src="/Ceramic_soul/assets/tea-1-vKMOH0_y.jpg" alt="tea-1"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<button class="icon-right-open works__slider-nav"></button>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__newsletter">
+					<p class="footer__newsletter-title">NEWSLETTER</p>
+					<p class="footer__newsletter-text">Keep up to date with news and promotions</p>
+					<form class="footer__newsletter-form" novalidate>
+						<input class="footer__newsletter-input" type="email" id="newsletter-email" name="email"
+							placeholder="Enter your e-mail">
+						<label class="footer__newsletter-label">
+							<input type="checkbox" class="footer__newsletter-checkbox" id="newsletter-checkbox">
+							I agree with the <a href="#">terms</a>
+						</label>
+						<div class="newsletter-checkbox-error__message"></div>
+						<button class="footer__newsletter-btn" type="submit">SUBMIT</button>
+					</form>
+				</div>
+
+				<nav class="footer__nav">
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">DISCOVER</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">SHOPPING</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">Catalog</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">INFORMATION</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">FOLLOW US</p>
+						<ul class="footer__nav-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-pinterest-circled"></i></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<p class="footer__copy">© Copyright 2025. Ceramic soul</p>
+		</div>
+	</footer>
 </body>
 
 </html>

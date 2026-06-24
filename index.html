@@ -6,19 +6,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Website for Ceramic soul brand" />
 	<meta name="author" content="Awesome student" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://metatags.io/" />
+	<meta property="og:title" content="Ceramic soul" />
+	<meta property="og:description" content="Learn pottery!" />
+	<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<!-- X (Twitter) -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://metatags.io/" />
+	<meta property="twitter:title" content="Ceramic soul" />
+	<meta property="twitter:description" content="Learn pottery!" />
+	<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>Ceramic soul</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
 		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 	<section class="promo">
 		<img src="./src/img/promo/potter.jpg" alt="potter" class="promo__potter">
-		<div class="container">
-			<div class="header">
+		<div class="header">
+			<div class="header__menu header">
+				<div class="header__menu-close">
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="header__menu-nav">
+					<ul>
+						<li><a href="/Ceramic_soul/catalog" class="header__menu-link">catalog</a></li>
+						<li><a href="/Ceramic_soul/blog" class="header__menu-link">blog</a></li>
+						<li><a href="/Ceramic_soul/about" class="header__menu-link">about</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container">
 				<div class="header__top">
 					<div class="burger">
 						<span></span><span></span><span></span>
@@ -31,12 +78,14 @@
 				</div>
 				<nav class="header__nav">
 					<ul>
-						<li><a href="#" class="header__link">catalog</a></li>
-						<li><a href="#" class="header__link">blog</a></li>
-						<li><a href="#" class="header__link">about </a></li>
+						<li><a href="/Ceramic_soul/catalog" class="header__link">catalog</a></li>
+						<li><a href="/Ceramic_soul/blog" class="header__link">blog</a></li>
+						<li><a href="/Ceramic_soul/about" class="header__link">about</a></li>
 					</ul>
 				</nav>
 			</div>
+		</div>
+		<div class="container">
 			<div class="promo__wrapper">
 				<h1 class="title-h1-italic promo__title">Make your dream come true<br>or decorate your home</h1>
 				<div class="promo__cta">
@@ -92,7 +141,7 @@
 					<img class="touch__img" src="/src/img/form/tea.jpg" alt="tea">
 				</div>
 				<div class="pure-u-1 pure-u-xl-1-3 pure-u-xxl-3-5">
-					<form action="#">
+					<form class="touch__form" action="#">
 						<fieldset class="touch__fieldset">
 							<div class="touch__input-block">
 								<label class="touch__label" for="name">Name</label>
@@ -106,10 +155,13 @@
 						<label class="touch__label" for="">Your question</label>
 						<textarea class="touch__textarea" name="question" id="question"
 							placeholder="Question"></textarea>
+						<div class="error__message"></div>
 
 						<label class="touch__label touch__check-block" for="checkbox">
 							<input class="touch__checkbox" type="checkbox" id="checkbox">
 							I agree with the <a href="#">terms</a></label>
+						<div class="checkbox-error__message"></div>
+
 						<button class="btn-send touch__btn">send request</button>
 					</form>
 				</div>
@@ -120,24 +172,73 @@
 	<section class="works">
 		<h2 class="title-h2">check out our works</h2>
 		<div class="container">
-			<div class="swiper works__slider">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-					...
+			<div class="works__wrapper">
+				<button class="icon-left-open works__slider-nav"></button>
+				<div class="swiper works__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="/src/img/works/tea-1.jpg" alt="tea-1"></div>
+						<div class="swiper-slide"><img src="/src/img/works/tea-2.jpg" alt="tea-2"></div>
+						<div class="swiper-slide"><img src="/src/img/works/tea-3.jpg" alt="tea-3"></div>
+						<div class="swiper-slide"><img src="/src/img/works/tea-1.jpg" alt="tea-1"></div>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<button class="icon-right-open works__slider-nav"></button>
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__newsletter">
+					<p class="footer__newsletter-title">NEWSLETTER</p>
+					<p class="footer__newsletter-text">Keep up to date with news and promotions</p>
+					<form class="footer__newsletter-form" novalidate>
+						<input class="footer__newsletter-input" type="email" id="newsletter-email" name="email"
+							placeholder="Enter your e-mail">
+						<label class="footer__newsletter-label">
+							<input type="checkbox" class="footer__newsletter-checkbox" id="newsletter-checkbox">
+							I agree with the <a href="#">terms</a>
+						</label>
+						<div class="newsletter-checkbox-error__message"></div>
+						<button class="footer__newsletter-btn" type="submit">SUBMIT</button>
+					</form>
+				</div>
+
+				<nav class="footer__nav">
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">DISCOVER</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">SHOPPING</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">Catalog</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">INFORMATION</p>
+						<ul class="footer__nav-list">
+							<li><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-col">
+						<p class="footer__nav-title">FOLLOW US</p>
+						<ul class="footer__nav-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-pinterest-circled"></i></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<p class="footer__copy">© Copyright 2025. Ceramic soul</p>
+		</div>
+	</footer>
 	<script type="module" src="/src/js/script.js"></script>
 </body>
 

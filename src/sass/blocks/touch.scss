@@ -1,7 +1,12 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .touch {
+    .just-validate-error-field {
+        border: 1px solid $ui-disabled;
+    }
+
     padding-top: 60px;
+    padding-bottom: 60px;
 
     &__vase {
         display: none;
@@ -167,6 +172,10 @@
                 border: none;
                 outline: 1px solid $dark;
             }
+        }
+
+        &__vase {
+            animation: moveAndRotate 4s linear infinite;
         }
     }
 }

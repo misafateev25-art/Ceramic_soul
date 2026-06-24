@@ -3,6 +3,7 @@
 @use "/src/sass/libs/grids-responsive-min.css";
 @use "/src/sass/libs/fontello.css";
 @use "/src/sass/base/basic.scss";
+@use "/src/sass/base/animations.scss";
 
 @use "/src/sass/blocks/header.scss";
 
@@ -10,9 +11,10 @@
 @use "/src/sass/ui/buttons.scss";
 
 @use "/src/sass/blocks/promo.scss";
-
 @use "/src/sass/blocks/activites.scss";
-
 @use "/src/sass/blocks/touch.scss";
-
 @use "/src/sass/blocks/works.scss";
+@use '/src/sass/blocks/catalog.scss';
+@use "/src/sass/blocks/footer.scss";
+@use "/src/sass/blocks/blog.scss";
+@use "/src/sass/blocks/fidnus.scss";

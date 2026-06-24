@@ -1,0 +1,229 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    background-color: $dark;
+    color: $light;
+    padding: 40px 0 24px 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__newsletter-title {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin: 0;
+    }
+
+    &__newsletter-text {
+        font-size: 14px;
+        color: $ui-active;
+        margin: 0;
+    }
+
+    &__newsletter-input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $light;
+        color: $light;
+        padding: 8px 0;
+        font-size: 14px;
+        outline: none;
+        width: 100%;
+
+        &::placeholder {
+            color: $ui-active;
+        }
+    }
+
+    &__newsletter-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: $light;
+        cursor: pointer;
+
+        a {
+            color: $ceramic;
+            text-decoration: none;
+        }
+    }
+
+    &__newsletter-checkbox {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    &__newsletter-btn {
+        background: transparent;
+        border: 1px solid $light;
+        color: $light;
+        padding: 10px 24px;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        align-self: flex-start;
+        transition: background 0.2s, color 0.2s;
+
+        &:hover {
+            background: $light;
+            color: $dark;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__nav-title {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin: 0 0 12px 0;
+    }
+
+    &__nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        a {
+            color: $ui-active;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $light;
+            }
+        }
+    }
+
+    &__nav-social {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 16px;
+
+        a {
+            color: $light;
+            font-size: 18px;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $ceramic;
+            }
+        }
+    }
+
+    &__copy {
+        font-size: 12px;
+        color: $ui-active;
+        text-align: center;
+        margin: 32px 0 0 0;
+    }
+
+    .just-validate-error-field {
+        border-bottom: 1px solid #D20202;
+
+        &::placeholder {
+            color: #D20202;
+        }
+    }
+
+    .just-validate-error-label {
+        color: #D20202;
+    }
+
+    .newsletter-checkbox-error__message {
+        color: #D20202;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__nav {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        &__newsletter {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding: 60px 0 32px 0;
+
+        &__inner {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        &__newsletter {
+            max-width: 300px;
+            flex-shrink: 0;
+        }
+
+        &__nav {
+            flex: 1;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 80px 0 40px 0;
+
+        &__inner {
+            gap: 120px;
+        }
+
+        &__newsletter {
+            max-width: 400px;
+        }
+
+        &__newsletter-title,
+        &__newsletter-text,
+        &__newsletter-input,
+        &__newsletter-label,
+        &__newsletter-btn,
+        &__nav-title,
+        &__nav-list a,
+        &__copy {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.info {
+    .about__title {
+        text-align: center;
+        padding: 60px 0 60px 0;
+    }
+}
+
+.findus {
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.map__wrapper {
+    iframe {
+        width: 100%;
+        height: 206px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .findus {
+        .container {
+            padding: 0 29px;
+            margin-bottom: 60px;
+        }
+
+        .map__wrapper {
+            iframe {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .findus {
+        .container {
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        .map__wrapper {
+            iframe {
+                width: 663px;
+                height: 500px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .findus {
+        margin-bottom: 100px;
+
+        &__title {
+            margin-bottom: 80px;
+        }
+
+        .container {
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        .map__wrapper {
+            iframe {
+                width: 801px;
+                height: 604px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}

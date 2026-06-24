@@ -1,3 +1,85 @@
+@use "/src/sass/base/variables.scss" as *;
+
 .works {
-    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .title-h2 {
+        margin-bottom: 40px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    &__slider {
+        flex: 1;
+        min-width: 0;
+        padding-bottom: 45px;
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 0;
+            background: $dark;
+            opacity: 1;
+            margin: 0 6px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $ceramic;
+        }
+    }
+
+    .works__slider-nav {
+        font-size: 21px;
+        color: $dark;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        flex-shrink: 0;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .works {
+        .swiper-slide img {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        &__wrapper {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .works {
+        .works__slider-nav {
+            display: block;
+        }
+
+        &__wrapper {
+            gap: 30px;
+            margin-top: 80px;
+            padding: 0 40px;
+        }
+
+        &__slider {
+            padding-bottom: 40px;
+        }
+    }
 }
